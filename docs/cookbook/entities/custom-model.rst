@@ -42,10 +42,10 @@ The generator will ask you for the entity name and fields. See how it should loo
 
 .. note::
 
-You can encounter error when generating entity with Maker Bundle, this can be fixed with `Maker bundle force annotation fix <https://github.com/vklux/maker-bundle-force-annotation>`_
+    You can encounter error when generating entity with Maker Bundle, this can be fixed with `Maker bundle force annotation fix <https://github.com/vklux/maker-bundle-force-annotation>`_
 
-.. image:: ../../_images/make_entity_error.png
-    :align: center
+    .. image:: ../../_images/make_entity_error.png
+        :align: center
 
 3. Update the database using migrations
 ---------------------------------------
@@ -82,7 +82,7 @@ Go to the generated class file and make it implement the ``ResourceInterface``:
     }
 
 5. Change repository to extend EntityRepository
---------------------------------------------
+-----------------------------------------------
 
 Go to generated repository and make it extend ``EntityRepository`` and remove ``__construct``:
 
@@ -221,14 +221,14 @@ Having a grid prepared we can configure routing for the entity administration:
             prefix: /admin
 
 10. Add entity administration to the admin menu
-----------------------------------------------
+-----------------------------------------------
 
 .. tip::
 
     See :doc:`how to add links to your new entity administration in the administration menu </customization/menu>`.
 
 11. Check the admin panel for your changes
------------------------------------------
+------------------------------------------
 
 .. tip::
 
