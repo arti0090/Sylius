@@ -29,5 +29,5 @@ Feature: Viewing different discounted price for different product variants
         Given there is a catalog promotion "For apple drinks" that reduces price by "30%" and applies on "Wyborowa Apple" variant
         When I view product "Wyborowa Vodka"
         And I select "Wyborowa Apple" variant
-        Then the product variant price should be "$8,79"
+        Then the product variant price should be "$8.79"
         And the product original price should be "$20.00"
