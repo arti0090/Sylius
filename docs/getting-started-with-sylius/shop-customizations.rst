@@ -30,7 +30,24 @@ Next, replace the ``img`` element source with a link to the logo or properly imp
 `Symfony assets documentation <https://symfony.com/doc/current/best_practices/web-assets.html>`_ for more info).
 
 The other way to achieve this is to modify the configuration of the ``sylius.shop.layout.header.grid`` template event.
-Learn more about it in :doc:`this doc</customization/template>`.
+Using the same logo file as from example above ``templates/bundles/SyliusShopBundle/Layout/Header/_logo.html.twig``.
+Change the configuration file:
+
+.. code-block:: yaml
+
+    # config.yaml
+
+    sylius_ui:
+    events:
+        sylius.shop.layout.header.grid:
+            blocks:
+                logo: 'bundles/SyliusShopBundle/Layout/Header/_myLogo.html.twig'
+
+If you want to learn more about template customization with sylius template events - click here :doc:`this section</customization/template>`.
+
+.. hint::
+
+    We encourage to create and register another ``.yaml`` file to store template changes for more clarity in configuration files.
 
 .. hint::
 
